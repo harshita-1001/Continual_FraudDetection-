@@ -77,7 +77,7 @@ if st.button("Predict Fraud"):
 
     st.metric("Fraud Probability", f"{prob:.4f}")
 
-    if prob > 0.7:
+    if prob > 0.0:
         st.error("⚠️ FRAUD DETECTED")
     else:
         st.success("✅ Legitimate Transaction")
